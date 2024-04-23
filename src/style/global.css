@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('./form.css');
+
+:root{
+    --primary-color: white;
+    --secondary-color: #596881;
+    --light-color: #252525;
+    --base-color: #141414;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--base-color);
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0 0 1rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 0 0 1rem;
+}
+
+p {
+    font-weight: 200;
+    margin: 0 0 1rem;
+    color: var(--secondary-color);
+}
+
+p span {
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+button {
+    background: none;
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+.card-container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: stretch;
+}
+
+.header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: "Poppins";
+    letter-spacing: -4px;
+}
+
+.header > a:nth-last-child(1) {
+    padding: .5rem 1.2rem;
+    background-color: var(--primary-color);
+    color: var(--base-color);
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.home{
+    padding: 50px 20px 10px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner > div:nth-child(1){
+    width: 50%;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0 0 1rem;
+    gap: 1rem;
+}
+
+.filters form {
+    width: 30%;
+}
+
+.category {
+    width: 50%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.category::-webkit-scrollbar {
+    display: none;
+}
+
+.category > button {
+    background-color: var(--base-color);
+    padding: .5rem 2rem;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.category > button:hover,
+.category > button.active {
+    background-color: var(--light-color);
+}
+
+.highlights {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.carousels {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.carousels > img {
+    width: 100%;
+    aspect-ratio: 4/1;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.carousels-bar {
+    width: 50%;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousels-bar > button {
+    background-color: var(--light-color);
+    width: 100%;
+    height: 8px;
+    border-radius: 20px;
+}
+
+.carousels-bar > .active {
+    background-color: var(--primary-color);
+}
+
+.card-event {
+    position: relative;
+    display: flex;
+}
+
+.card-event > img {
+    width: 100%;
+    aspect-ratio: 10/11;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.card-event > div {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, rgb(20, 20, 20, 0.15), rgb(20, 20, 20, 0.8));
+    
+    display: flex;
+    align-items: end;
+}
+
+.info {
+    padding: 15px;
+    color: var(--primary-color);
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem; 
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-weight: 600;
+}
+
+.info p {
+    color: var(--primary-color);
+    display: flex;
+    gap: 1rem;
+    margin-bottom: .5rem; 
+    font-weight: 200;
+}
+
+.info span {
+    font-weight: 200;
+}
+
+.pagination{
+    display: flex;
+    margin: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pagination .divider {
+    flex-grow: 1;
+    height: 2px;
+    background: var(--light-color);
+    border-radius: 20px;
+}
+
+.pagination p{
+    margin: 0;
+}
+
+.pagination-bar {
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.pagination-bar button {
+    padding: 1.2rem 1.5rem;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.pagination-bar .prev-btn.disable,
+.pagination-bar .next-btn.disable {
+    background: var(--light-color);
+    border: 1px solid var(--light-color);
+}
+
+
+.pagination-bar .active,
+.pagination-bar .prev-btn,
+.pagination-bar .next-btn {
+    background: var(--base-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.pagination-bar .ellipsis {
+    cursor: default;
+}
+
+.detail > .banner {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 2/1;
+}
+  
+.detail {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.detail > .content {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    text-align: left;
+}
+.detail > .content > div {
+    padding: 20px;
+}
+.detail p {
+    color: var(--primary-color);
+}
+
+.detail .date {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.detail > .content > div:nth-child(2) {
+    grid-column: span 6;
+}
+
+.detail > .content > div:nth-child(2) div {
+    margin: 1.5rem 0;
+}
+
+.detail h1,
+.detail .location,
+.detail h2 {
+    text-align: center;
+    text-transform: capitalize
+}
+
+.detail h1{
+    font-weight: 600;
+}
+
+.detail .location{
+    font-weight: 300;
+    font-size: 1.2rem
+}
+
+.footer {
+    margin: 100px 0 0;
+}
+
+.footer > div:nth-child(2) {
+    text-align: center;
+    padding: 1rem 20px;
+    font-weight: 200;
+}
+
+.feedback {
+    background-color: var(--light-color);
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.feedback > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.feedback > div > div:nth-child(1) > p{
+    width: 80%;
+    line-height: 2rem;
+    color: var(--primary-color);
+    font-weight: 200;
+}
+
+.feedback > div > div:nth-child(2){
+    width: 25%;
+    min-width: 300px;
+}

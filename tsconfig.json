@@ -13,6 +13,9 @@
     "useDefineForClassFields": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "isolatedModules": true,
     "types": [
       "webpack-env"
     ],

@@ -1,0 +1,50 @@
+form > * {
+    outline: none;
+}
+
+input[type="text"] {
+    background-color: var(--light-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    border-radius: 20px;
+    letter-spacing: 1.5px;
+    width: 100%;
+    color: var(--primary-color);
+    outline: none;
+}
+
+.feedback form {
+    margin: 0 0 1rem;
+}
+
+
+.feedback form input {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: "Poppins";
+    border-radius: 20px;
+    letter-spacing: 1.5px;
+    outline: none;
+    color: var(--primary-color);
+    flex-grow: 1;
+}
+
+.feedback form div {
+    background-color: var(--base-color);
+    border-radius: 20px;
+    display: flex;
+    padding: 3px;
+    margin: 1rem 0 0;
+}
+
+.feedback form button {
+    background-color: #754CFF;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
